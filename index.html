@@ -3,31 +3,34 @@
     <head>
         <meta charset="utf-8">
         <title>JavaSctipt Calculator</title>
-            <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
  
     <body>
         <img class="back" src="cal.jpg">
-        <form class="calculator" name="calc">
-            <input class="value" type="text" name="txt" readonly="">
-            <span class="num clear" onclick="document.calc.txt.value =''">C</span>
-            <span class="num" onclick="document.calc.txt.value +='/'">/</span>
-            <span class="num" onclick="document.calc.txt.value +='*'">*</span>
-            <span class="num" onclick="document.calc.txt.value +='7'">7</span>
-            <span class="num" onclick="document.calc.txt.value +='8'">8</span>
-            <span class="num" onclick="document.calc.txt.value +='9'">9</span>
-            <span class="num" onclick="document.calc.txt.value +='-'">-</span>
-            <span class="num" onclick="document.calc.txt.value +='4'">4</span>
-            <span class="num" onclick="document.calc.txt.value +='5'">5</span>
-            <span class="num" onclick="document.calc.txt.value +='6'">6</span>
-            <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
-            <span class="num" onclick="document.calc.txt.value +='3'">3</span>
-            <span class="num" onclick="document.calc.txt.value +='2'">2</span>
-            <span class="num" onclick="document.calc.txt.value +='1'">1 </span>
-            <span class="num" onclick="document.calc.txt.value +='0'">0</span>
-            <span class="num" onclick="document.calc.txt.value +='00'">00</span>
-            <span class="num" onclick="document.calc.txt.value +='.'">.</span>
-            <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">= </span>
-        </form>
+            <form class="calculator" name="calc" id="calc" style="background-color: darkslateblue;">
+                <input id="in" class="value" type="text" name="txt" readonly="" placeholder="0">
+                <span class="numb clear" onclick="clearInp()">C</span>
+                <span class="numb" onclick="ans('/')">/</span>
+                <span class="numb" onclick="ans('*')">*</span>
+                <span class="numb" onclick="ans('7')">7</span>
+                <span class="numb" onclick="ans('8')">8</span>
+                <span class="numb" onclick="ans('9')">9</span>
+                <span class="numb" onclick="ans('-')">-</span>
+                <span class="numb" onclick="ans('4')">4</span>
+                <span class="numb" onclick="ans('5')">5</span>
+                <span class="numb" onclick="ans('6')">6</span>
+                <span class="numb plus" onclick="ans('+')">+</span>
+                <span class="numb" onclick="ans('3')">3</span>
+                <span class="numb" onclick="ans('2')">2</span>
+                <span class="numb" onclick="ans('1')">1 </span>
+                <span class="numb" onclick="ans('0')">0</span>
+                <span class="numb" onclick="ans('00')">00</span>
+                <span class="numb" onclick="ans('.')">.</span>
+                <span class="numb equal" onclick="eva()">= </span>
+            </form>
+        
+        
+        <script src="app.js"></script>
     </body>
 </html>

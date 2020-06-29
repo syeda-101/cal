@@ -23,6 +23,19 @@ body{
     position: relative;
     display: grid;
 }
+.casio{
+    background-color: darkslateblue;
+    color: white;
+}
+.numb{
+    border-radius: 20px;
+}
+
+
+#calc{
+    border: 20px solid darkslateblue;
+    border-radius: 25px;
+}
 
 .calculator .value{
     grid-column: span 4;
